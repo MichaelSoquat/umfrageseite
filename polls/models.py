@@ -18,3 +18,4 @@ class Choice(models.Model):
     def __str__(self):
         return "{0}: {1}".format(self.poll.name, self.name)
 
+# Choice.objects.filter(poll__id=1).all()     dasselbe wie: a.choice_set.all()
